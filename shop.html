@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique - English On Demand</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+    <header>
+        <h1>Boutique English On Demand</h1>
+        <p>Apprenez et vivez l'anglais au quotidien avec nos ebooks et accessoires !</p>
+        <nav>
+            <button class="filter-btn" data-category="all">Tous</button>
+            <button class="filter-btn" data-category="ebook">Ebooks</button>
+            <button class="filter-btn" data-category="tshirt">T-Shirts</button>
+            <button class="filter-btn" data-category="casquette">Casquettes</button>
+            <button class="filter-btn" data-category="notebook">Notebooks</button>
+            <div class="cart-icon" onclick="toggleCart()">🛒 <span id="cart-count">0</span></div>
+        </nav>
+    </header>
+
+    <section id="products">
+        <!-- Produit 1 (Exemple EBOOK) -->
+        <div class="product" data-category="ebook">
+            <img src="ebook1.jpg" alt="Ebook 1">
+            <h3>English Mastery</h3>
+            <p class="price">2 500 FCFA</p>
+            <button onclick="addToCart('English Mastery', 2500, 'ebook1.jpg', 'https://feexpay.com/lien-paiement')">Acheter</button>
+        </div>
+
+        <!-- Produit 2 (Exemple T-SHIRT) -->
+        <div class="product" data-category="tshirt">
+            <img src="tshirt1.jpg" alt="T-Shirt">
+            <h3>T-Shirt English Lover</h3>
+            <p class="price">5 000 FCFA</p>
+            <button onclick="addToCart('T-Shirt English Lover', 5000, 'tshirt1.jpg', 'https://feexpay.com/lien-paiement')">Acheter</button>
+        </div>
+
+        <!-- Ajoute d'autres produits ici -->
+    </section>
+
+    <!-- Modal de détails du produit -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <h2 id="modal-title"></h2>
+            <p id="modal-price"></p>
+            <button id="modal-buy">Acheter</button>
+        </div>
+    </div>
+
+    <!-- Panier -->
+    <div id="cart" class="cart">
+        <h2>Votre Panier</h2>
+        <ul id="cart-items"></ul>
+        <p>Total : <span id="cart-total">0</span> FCFA</p>
+        <button id="checkout-btn" onclick="checkout()">Payer</button>
+        <button onclick="toggleCart()">Fermer</button>
+    </div>
+
+    <script src="shop.js"></script>
+</body>
+</html>
