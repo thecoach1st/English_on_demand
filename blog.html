@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English On Demand</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Section Accueil -->
+    <header>
+        <h1>English On Demand</h1>
+        <p>Pratiquez et progressez quand vous voulez, en toute simplicité, selon vos disponibilités.</p>
+        <img src="image header.jpg" alt="Coaching en anglais" class="header-img">
+    </header>
+
+<!-- Menu de navigation -->
+<nav>
+    <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#nos offres">Nos Offres</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#coaches">Coaches</a></li>
+        <li><a href="shop.html">Boutique</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#chatbot">Chat IA</a></li>
+    </ul>
+</nav>
+
+<!-- Section Blog -->
+<section id="blog">
+    <h2>Nos Articles</h2>
+    <div class="article">
+        <h3>Comment améliorer son anglais rapidement ?</h3>
+        <p>Découvrez des astuces pratiques pour progresser en anglais.</p>
+        <a href="article1.html">Lire la suite</a>
+    </div>
+    <div class="article">
+        <h3>Pourquoi pratiquer avec un coach ?</h3>
+        <p>Les avantages d’un coaching personnalisé pour apprendre l’anglais.</p>
+        <a href="#">Lire la suite</a>
+    </div>
+</section>
+
+<section id="blog-articles"></section>
+
+<script>
+const articles = [
+    {
+        "title": "Comment améliorer son anglais rapidement ?",
+        "description": "Découvrez des astuces pour apprendre efficacement.",
+        "link": "blog/article1.html"
+    }
+];
+
+let blogSection = document.getElementById("blog-articles");
+articles.forEach(article => {
+    let articleElement = document.createElement("article");
+    articleElement.innerHTML = `
+        <h2><a href="${article.link}">${article.title}</a></h2>
+        <p>${article.description}</p>
+        <a href="${article.link}" class="cta-button">Lire l'article</a>
+    `;
+    blogSection.appendChild(articleElement);
+});
+</script>
+
+<!-- Bouton Retour en Haut -->
+<button id="backToTop">↑</button>
+
+<!-- Pied de page -->
+    <footer>
+        <p>&copy; 2025 English On Demand. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
