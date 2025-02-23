@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 20px;
+}
+.search-filter {
+    margin: 20px;
+}
+input, select {
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+}
+#resources-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.resource {
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
