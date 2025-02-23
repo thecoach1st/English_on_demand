@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Banque de ressources pour apprendre l'anglais : dictionnaires, formations, sites, chaînes YouTube, films et événements en cours.">
+    <title>Banque de Ressources | English On Demand</title>
+    <link rel="stylesheet" href="bank.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Banque de Ressources</h1>
+        <p>Trouvez les meilleures ressources pour améliorer votre anglais !</p>
+    </header>
+    
+    <nav>
+        <input type="text" id="search" placeholder="Rechercher une ressource...">
+        <button class="filter" data-filter="all">Tous</button>
+        <button class="filter" data-filter="dictionnaire">Dictionnaires</button>
+        <button class="filter" data-filter="formation">Formations</button>
+        <button class="filter" data-filter="site">Sites Web</button>
+        <button class="filter" data-filter="youtube">Chaînes YouTube</button>
+        <button class="filter" data-filter="film">Films & Séries</button>
+        <button class="filter" data-filter="evenement">Événements</button>
+    </nav>
+    
+    <section id="resources">
+        <div class="resource" data-category="dictionnaire">
+            <h3>WordReference</h3>
+            <p>Un dictionnaire en ligne complet.</p>
+            <a href="https://www.wordreference.com" target="_blank">Accéder</a>
+        </div>
+        <div class="resource" data-category="youtube">
+            <h3>BBC Learning English</h3>
+            <p>Chaîne YouTube pour améliorer votre anglais.</p>
+            <a href="https://www.youtube.com/bbclearningenglish" target="_blank">Regarder</a>
+        </div>
+        <div class="resource" data-category="film">
+            <h3>Friends</h3>
+            <p>Une série parfaite pour apprendre l'anglais conversationnel.</p>
+            <a href="#">En savoir plus</a>
+        </div>
+        <div class="resource" data-category="evenement">
+            <h3>Webinaire : Comment apprendre l’anglais efficacement</h3>
+            <p>Le 15 octobre 2024 - Inscription gratuite.</p>
+            <a href="#">S'inscrire</a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 English On Demand | Suivez-nous sur <a href="#">Facebook</a> et <a href="#">Instagram</a></p>
+    </footer>
+</body>
+</html>
